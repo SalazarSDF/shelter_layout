@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/ 16px = 62.5% => 1rem = 10px;
+}
+
+body {
+  box-sizing: inherit;
+  font-family: $font-primary;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 100vh repeat(5, 100px);
+  grid-template-columns:
+    [full-start] minmax(4rem, 1fr) 4rem
+    [center-start] repeat(10, [col-start] minmax(min-content, 12rem) [col-end])
+    [center-end] minmax(4rem, 1fr) [full-end];
+}

@@ -1,0 +1,36 @@
+{
+  "name": "salazarsdf-jsfepreschool",
+  "version": "1.0.0",
+  "description": "Private repository for @salazarsdf",
+  "private": "true",
+  "scripts": {
+    "server": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/salazarsdf-JSFEPRESCHOOL.git"
+  },
+  "keywords": [],
+  "author": "SalazarSDF",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/salazarsdf-JSFEPRESCHOOL/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/salazarsdf-JSFEPRESCHOOL#readme",
+  "devDependencies": {
+    "@babel/core": "*",
+    "@babel/preset-env": "*",
+    "babel-loader": "*",
+    "css-loader": "*",
+    "html-loader": "^3.1.2",
+    "html-webpack-plugin": "*",
+    "sass": "*",
+    "sass-loader": "*",
+    "style-loader": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "webpack-dev-server": "*"
+  }
+}

@@ -1,0 +1,32 @@
+.header {
+  grid-row: 1/2;
+  grid-column: center-start/center-end;
+  z-index: 1;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &--main {
+    height: 6rem;
+  }
+}
+
+.nav {
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  > a {
+    text-decoration: none;
+  }
+  &--main__title {
+    color: $color-primary;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.06em;
+  }
+}

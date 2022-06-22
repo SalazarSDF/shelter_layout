@@ -1,0 +1,26 @@
+// базовые подключения
+//@use "sass:math";
+//@use "mixins";
+//@use "variables";
+//@use "settings";
+//@use "fonts";
+//@use "popUp";
+//
+@import "variables";
+@import "./base";
+@import "./_fonts";
+
+// подключения компонентов страницы main-page
+@import "./main-page/header";
+@import "./main-page/start-screen";
+// @use "./main-page/header";
+// @use "./main-page/not-only";
+// @use "./main-page/about";
+// @use "./main-page/our-friends.scss";
+// @use "./main-page/help";
+// @use "./main-page/in-addition";
+// @use "./main-page/footer";
+
+// // подключения компонентов страницы pets-page
+// @use "./pets-page/header-pets";
+// @use "./pets-page/main-pets";
