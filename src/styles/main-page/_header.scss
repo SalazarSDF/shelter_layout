@@ -1,32 +1,36 @@
 .header {
-  grid-row: 1/2;
-  grid-column: center-start/center-end;
-  z-index: 1;
-  margin-top: 3rem;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   &--main {
-    height: 6rem;
+    position: absolute;
+    top: 6rem;
+    padding: 0 4rem;
   }
 }
 
 .nav {
-  &__link:link,
-  &__link:visited {
-    text-decoration: none;
-  }
-}
+  display: flex;
+  gap: 3.5rem;
 
-.logo {
-  > a {
-    text-decoration: none;
+  &__link:visited,
+  &__link:link {
+    &:hover {
+      box-shadow: 0 3px 0 $color-primary;
+    }
   }
-  &--main__title {
-    color: $color-primary;
-    font-weight: 400;
-    font-size: 3.2rem;
-    line-height: 3.5rem;
-    letter-spacing: 0.06em;
+
+  &--main {
+    &__link:link,
+    &__link:visited {
+      color: $color-dark-s;
+      text-decoration: none;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $color-light-s;
+      }
+    }
   }
 }

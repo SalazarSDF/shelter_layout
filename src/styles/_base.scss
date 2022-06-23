@@ -16,11 +16,11 @@ body {
   font-family: $font-primary;
 }
 
-.container {
-  display: grid;
-  grid-template-rows: 100vh repeat(5, 100px);
-  grid-template-columns:
-    [full-start] minmax(4rem, 1fr) 4rem
-    [center-start] repeat(10, [col-start] minmax(min-content, 12rem) [col-end])
-    [center-end] minmax(4rem, 1fr) [full-end];
-}
+// .container {
+//   position: relative;
+//   padding: 0 4rem;
+//   // grid-template-columns:
+//   //   [full-start] minmax(0rem, 1fr) 4rem
+//   //   [center-start] repeat(6, [col-start] minmax(min-content, 20rem) [col-end])
+//   //   [center-end] 4rem minmax(0rem, 1fr) [full-end];
+// }
