@@ -22,6 +22,8 @@
   }
 
   &--main {
+    padding-bottom: 0.5rem;
+    padding-right: 0.3rem;
     &__link:link,
     &__link:visited {
       color: $color-dark-s;

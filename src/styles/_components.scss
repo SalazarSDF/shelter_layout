@@ -1,0 +1,33 @@
+// 4.2 rem margin top
+.btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    padding: 1.5rem 4.5rem;
+    display: inline-block;
+    border-radius: 10rem;
+
+    font-family: $font-primary;
+    font-size: 1.7rem;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+
+    /*button pushed, not immediate but white nice delay */
+
+    //Change for the <button> element
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+  }
+  &--secondary {
+    background-color: $color-light-xl;
+    border: 2px solid $color-primary;
+  }
+}

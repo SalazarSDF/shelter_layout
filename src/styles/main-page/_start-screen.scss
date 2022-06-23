@@ -22,11 +22,15 @@
 
 .not-only {
   flex: 0 0 38%;
+  padding-top: 16.3rem;
+  padding-right: 5rem;
   &__heading {
     color: $color-light-xl;
   }
 
   &__paragraph {
     color: $color-dark-s;
+    padding-top: 4.1rem;
+    margin-right: -5.5rem;
   }
 }
