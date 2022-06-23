@@ -1,0 +1,23 @@
+.about {
+  margin: 7.9rem 4rem 10rem;
+  display: flex;
+  justify-content: center;
+  gap: 12rem;
+
+  &__content {
+    padding-top: 14px;
+    order: 2;
+    flex: 0 0 36%;
+  }
+  &__img {
+    order: 1;
+  }
+  &__heading {
+    color: $color-dark-l;
+    margin-right: 3rem;
+  }
+  &__paragraph {
+    color: $color-dark-xl;
+    margin-top: 2.4rem;
+  }
+}
