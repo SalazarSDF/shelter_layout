@@ -1,5 +1,6 @@
-// 4.2 rem margin top
+// btns
 .btn {
+  &,
   &:link,
   &:visited {
     text-decoration: none;
@@ -28,6 +29,105 @@
   }
   &--secondary {
     background-color: $color-light-xl;
-    border: 2px solid $color-primary;
+    border: 2px solid $color-primary-light;
+  }
+}
+
+// swipper slider on main page
+.slider {
+  margin: 0 4rem;
+}
+.swiper {
+}
+
+.swiper-slide {
+  //height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //  //transition: all 200ms linear;
+  //  //transform: scale(0.8);
+}
+
+.swiper-button-next {
+  background-color: transparent;
+  width: 5.2rem !important;
+  height: 5.2rem !important;
+  border: 2px solid $color-primary;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  color: $color-dark-3xl !important;
+
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+  /*
+     Introduced in Internet Explorer 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+  -ms-user-select: none;
+
+  &:hover {
+    background-color: $color-primary-light;
+    border: 2px solid $color-primary-light;
+  }
+  &::after {
+    content: "" !important;
+  }
+}
+
+.swiper-button-prev {
+  background-color: transparent;
+  width: 5.2rem !important;
+  height: 5.2rem !important;
+  border: 2px solid $color-primary;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  color: $color-dark-3xl !important;
+
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+
+  /*
+     Introduced in Internet Explorer 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+  -ms-user-select: none;
+
+  &:hover {
+    background-color: $color-primary-light;
+    border: 2px solid $color-primary-light;
+  }
+  &::after {
+    content: "" !important;
+  }
+}
+
+//card
+//
+.card {
+  width: 27rem;
+  height: 43.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-light-s;
+  border-radius: 0.9rem;
+  &__title {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.3rem;
+
+    letter-spacing: 0.06em;
+    text-align: center;
+
+    color: $color-dark-l;
+    margin: 3rem 0;
   }
 }

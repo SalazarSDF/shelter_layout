@@ -4,7 +4,7 @@
   "description": "Private repository for @salazarsdf",
   "private": "true",
   "scripts": {
-    "server": "webpack serve --config webpack.dev.js",
+    "server": "rm -r ./dist && webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
   "browserslist": "> 0.25%, not dead",
@@ -32,5 +32,8 @@
     "webpack": "*",
     "webpack-cli": "*",
     "webpack-dev-server": "*"
+  },
+  "dependencies": {
+    "swiper": "^8.2.4"
   }
 }

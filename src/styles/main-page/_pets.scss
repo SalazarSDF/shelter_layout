@@ -1,0 +1,19 @@
+.pets {
+  background-color: $color-light-l;
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    margin-top: 8rem;
+    margin-bottom: 6rem;
+    align-self: center;
+    color: $color-dark-l;
+    width: 32%;
+    text-align: center;
+  }
+  &__btn {
+    align-self: center;
+    margin-top: 6rem;
+    margin-bottom: 10rem;
+  }
+}

@@ -1,6 +1,7 @@
 //import "./index.html";
 //import "./our_pets.html";
 import "../src/styles/index.scss";
+import "./js/swiper.js";
 // import "../src/js/makeCarusel.js";
 // import "../src/js/makeOurPetsCarusel.js";
 // import "../src/js/makeBurger.js";
