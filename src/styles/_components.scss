@@ -33,6 +33,23 @@
   }
 }
 
+.btn--donation {
+  max-width: 35rem;
+  height: 4.3rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  padding: 1rem 1.5rem;
+  background-color: $color-primary;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.9rem;
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+}
+
 // swipper slider on main page
 .slider {
   margin: 0 4rem;
