@@ -33,7 +33,18 @@ module.exports = {
       writeToDisk: true,
     },
   },
-
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: "index.html",
+      //title: "Shelter-main",
+      template: "src/index.html", // помогает найти html
+    }),
+    new HtmlWebpackPlugin({
+      filename: "our_pets.html",
+      //title: "Shelter-main",
+      template: "src/our_pets.html", // помогает найти html
+    }),
+  ],
   module: {
     rules: [
       {
@@ -64,16 +75,4 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      filename: "index.html",
-      //title: "Shelter-main",
-      template: "src/index.html", // помогает найти html
-    }),
-    new HtmlWebpackPlugin({
-      filename: "our_pets.html",
-      //title: "Shelter-main",
-      template: "src/our_pets.html", // помогает найти html
-    }),
-  ],
 };
