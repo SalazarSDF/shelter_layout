@@ -118,6 +118,8 @@
   align-items: center;
   background-color: $color-light-s;
   border-radius: 0.9rem;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
   &__title {
     font-family: $font-primary;
     font-weight: 400;
