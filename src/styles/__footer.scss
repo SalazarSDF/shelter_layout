@@ -1,0 +1,62 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-image: radial-gradient(
+      100% 215.42% at 0% 0%,
+      #5b483a 0%,
+      #262425 100%
+    ),
+    linear-gradient(0deg, #211f20, #211f20),
+    url(../assets/svg/noise_transparent.svg);
+  padding: 4rem 4rem 0rem 4rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 23.4rem;
+    margin-top: 1.6rem;
+  }
+  &__heading {
+    color: $color-light-xl;
+  }
+  &__mail {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    & > svg {
+      width: 4rem;
+      height: 3.2rem;
+    }
+  }
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $color-primary;
+  }
+  &__phone {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    & > svg {
+      width: 4rem;
+      height: 3.2rem;
+    }
+  }
+  &__location {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+
+    & ~ h4 {
+      color: blue;
+    }
+    & > svg {
+      width: 2.2rem;
+      height: 3.2rem;
+    }
+  }
+
+  &__dog {
+  }
+}
