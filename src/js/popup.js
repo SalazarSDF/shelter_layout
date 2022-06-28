@@ -26,18 +26,18 @@ function makePopup(card) {
   //change list
   let popupOldList = document.querySelector(".popup__list");
 
-  // age
+  // li age
   popupOldList.children[0].children[1].innerHTML = popupPetInfo.age;
 
-  // inoculations
+  // li inoculations
   popupOldList.children[1].children[1].innerHTML =
     popupPetInfo.inoculations.toString();
 
-  //diseases
+  // li diseases
   popupOldList.children[2].children[1].innerHTML =
     popupPetInfo.diseases.toString();
 
-  //parasites
+  // li parasites
   popupOldList.children[3].children[1].innerHTML =
     popupPetInfo.parasites.toString();
 }
@@ -45,6 +45,8 @@ function makePopup(card) {
 function showPopup(e) {
   let card = e.target.closest(".card");
   makePopup(card);
+  //off scroll
+  document.querySelector("body").style.overflow = "hidden";
   popup.classList.add("popup--active");
 
   popupBtn.addEventListener("click", removePopup);
@@ -54,6 +56,7 @@ function showPopup(e) {
 function removePopup(e) {
   if (e.target === popup || e.target === popupBtn) {
     popup.classList.remove("popup--active");
+    document.querySelector("body").style.overflow = "auto";
   }
 }
 cards.forEach((card) => card.addEventListener("click", showPopup));
