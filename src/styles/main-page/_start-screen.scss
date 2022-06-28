@@ -14,10 +14,20 @@
     display: flex;
     justify-content: space-between;
     gap: 4.2rem;
+    @media only screen and (max-width: $bp-large) {
+      padding-top: 15rem;
+      align-items: center;
+      flex-direction: column;
+      row-gap: 10rem;
+    }
   }
 
   &__dog {
     width: 100%;
+    @media only screen and (max-width: $bp-large) {
+      width: 74vw;
+      align-self: end;
+    }
   }
 }
 
@@ -25,6 +35,7 @@
   flex: 0 0 38%;
   padding-top: 16.3rem;
   padding-right: 5rem;
+
   &__heading {
     color: $color-light-xl;
   }
@@ -33,5 +44,16 @@
     color: $color-dark-s;
     padding-top: 4.1rem;
     margin-right: -5.5rem;
+  }
+
+  @media only screen and (max-width: $bp-largest) {
+    padding-top: 0;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

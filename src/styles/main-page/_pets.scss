@@ -10,6 +10,9 @@
     color: $color-dark-l;
     width: 32%;
     text-align: center;
+    @media only screen and(max-width: $bp-large) {
+      width: auto;
+    }
   }
   &__btn {
     align-self: center;

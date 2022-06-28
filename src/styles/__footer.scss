@@ -10,12 +10,22 @@
     url(../assets/svg/noise_transparent.svg);
   padding: 4rem 4rem 0rem 4rem;
 
+  @media only screen and(max-width: $bp-large) {
+    flex-wrap: wrap;
+    padding: 3rem 3rem 0 3rem;
+    justify-content: center;
+    gap: 6rem;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 23.4rem;
     margin-top: 1.6rem;
+    @media only screen and(max-width: $bp-large) {
+      margin-top: 0;
+    }
   }
   &__heading {
     color: $color-light-xl;
@@ -58,5 +68,11 @@
   }
 
   &__dog {
+    width: 100%;
+    flex: 0 0 24%;
+
+    @media only screen and(max-width: $bp-large) {
+      flex: 0 0 44%;
+    }
   }
 }

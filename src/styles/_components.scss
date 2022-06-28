@@ -53,6 +53,9 @@
 // swipper slider on main page
 .slider {
   margin: 0 4rem;
+  @media only screen and(max-width: $bp-large) {
+    margin: 0 2rem;
+  }
 }
 .swiper {
 }

@@ -24,6 +24,9 @@
     position: relative;
     transition: all 0.3s;
     transform: scale(0.25);
+    @media only screen and(max-width: $bp-large) {
+      flex: 0 0 82%;
+    }
   }
   &__img {
     flex: 0 0 50%;
@@ -33,6 +36,9 @@
   }
   &__content {
     margin: 5.1rem 1.8rem 8.8rem 2.6rem;
+    @media only screen and(max-width: $bp-large) {
+      margin: 1rem 0.9rem 3.7rem 1.1rem;
+    }
   }
   // &__heading {
   // }
@@ -41,6 +47,9 @@
   }
   &__paragraph {
     margin: 4.2rem 0;
+    @media only screen and(max-width: $bp-large) {
+      margin: 2rem 0;
+    }
   }
   &__list {
     list-style: none;

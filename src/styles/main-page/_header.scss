@@ -7,6 +7,11 @@
     position: absolute;
     top: 6rem;
     padding: 0 4rem;
+
+    @media only screen and (max-width: $bp-large) {
+      top: 3rem;
+      padding: 0 3rem;
+    }
   }
 }
 
