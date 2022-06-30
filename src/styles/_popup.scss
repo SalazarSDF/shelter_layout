@@ -33,6 +33,9 @@
     & > img {
       width: 100%;
     }
+    @media only screen and (max-width: $bp-medium) {
+      display: none;
+    }
   }
   &__content {
     margin: 5.1rem 1.8rem 8.8rem 2.6rem;
@@ -70,7 +73,12 @@
     position: absolute;
     top: -5.2rem;
     right: -5.2rem;
+    @media only screen and (max-width: $bp-medium) {
+      top: -3.2rem;
+      right: -3.2rem;
+    }
   }
+
   &--active {
     opacity: 1;
     visibility: visible;
