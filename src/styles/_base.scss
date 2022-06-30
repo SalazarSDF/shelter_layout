@@ -15,10 +15,6 @@ html {
 body {
   box-sizing: inherit;
   font-family: $font-primary;
-
-  &.--active {
-    overflow: hidden;
-  }
 }
 
 // .container {
