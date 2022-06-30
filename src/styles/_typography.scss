@@ -42,7 +42,7 @@
   letter-spacing: 0.06em;
 }
 
-.heading-3-mobile {
+@mixin heading-3-mobile {
   font-family: $font-primary;
   font-size: 2.5rem;
   line-height: 130%;
@@ -58,6 +58,14 @@
 }
 
 .heading-5 {
+  font-family: $font-primary;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+@mixin heading-5 {
   font-family: $font-primary;
   font-weight: 400;
   font-size: 1.5rem;

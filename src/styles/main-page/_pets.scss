@@ -13,10 +13,18 @@
     @media only screen and(max-width: $bp-large) {
       width: auto;
     }
+    @media only screen and (max-width: $bp-medium) {
+      @include heading-3-mobile;
+      margin-top: 4.2rem;
+    }
   }
   &__btn {
     align-self: center;
     margin-top: 3rem;
     margin-bottom: 10rem;
+    @media only screen and (max-width: $bp-medium) {
+      @include heading-3-mobile;
+      margin-bottom: 4.2rem;
+    }
   }
 }

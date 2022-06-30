@@ -48,6 +48,9 @@
   &:hover {
     background-color: $color-primary-light;
   }
+  @media only screen and (max-width: $bp-medium) {
+    max-width: 28.3rem;
+  }
 }
 
 // swipper slider on main page

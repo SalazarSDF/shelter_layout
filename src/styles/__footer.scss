@@ -26,9 +26,15 @@
     @media only screen and(max-width: $bp-large) {
       margin-top: 0;
     }
+    @media only screen and (max-width: $bp-medium) {
+      align-items: center;
+    }
   }
   &__heading {
     color: $color-light-xl;
+    @media only screen and (max-width: $bp-medium) {
+      @include heading-3-mobile;
+    }
   }
   &__mail {
     display: flex;

@@ -4,6 +4,7 @@ import "../src/styles/index.scss";
 import "./js/swiper.js";
 import "./js/popup.js";
 import "./js/petsArray.js";
+import "./js/burger.js";
 // import "../src/js/makeCarusel.js";
 // import "../src/js/makeOurPetsCarusel.js";
 // import "../src/js/makeBurger.js";

@@ -12,31 +12,51 @@
       top: 3rem;
       padding: 0 3rem;
     }
-  }
-}
 
-.nav {
-  display: flex;
-  gap: 3.5rem;
+    &__burger-icon {
+      position: relative;
+      display: inline-block;
+      transition: all 0.5s;
 
-  &__link:visited,
-  &__link:link {
-    &:hover {
-      box-shadow: 0 3px 0 $color-primary;
-    }
-  }
+      &__wrapper {
+        width: 3rem;
+        height: 3rem;
+        display: none;
+        cursor: pointer;
+        z-index: 500;
+        margin-right: 2.3rem;
+        @media only screen and (max-width: $bp-medium) {
+          display: flex;
+          align-items: center;
+        }
+      }
 
-  &--main {
-    padding-bottom: 0.5rem;
-    padding-right: 0.3rem;
-    &__link:link,
-    &__link:visited {
-      color: $color-dark-s;
-      text-decoration: none;
-      transition: all 0.2s;
+      &,
+      &::before,
+      &::after {
+        width: 3rem;
+        height: 2px;
+        background-color: $color-primary;
+      }
 
-      &:hover {
-        color: $color-light-s;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+      }
+
+      &::before {
+        top: -1rem;
+      }
+      &::after {
+        top: 1rem;
+      }
+
+      &.--active {
+        & {
+          transform: rotate(90deg);
+        }
       }
     }
   }

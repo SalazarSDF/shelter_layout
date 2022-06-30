@@ -38,6 +38,9 @@
 
   &__heading {
     color: $color-light-xl;
+    @media only screen and (max-width: $bp-medium) {
+      @include heading-3-mobile;
+    }
   }
 
   &__paragraph {
