@@ -23,6 +23,9 @@
       width: 56vw;
       order: 1;
     }
+    @media only screen and (max-width: $bp-small) {
+      width: 84vw;
+    }
   }
   &__img {
     flex: 0 0 23%;
@@ -33,6 +36,9 @@
       order: 2;
       width: auto;
     }
+    @media only screen and (max-width: $bp-small) {
+      width: 81%;
+    }
   }
   &__heading {
     color: $color-dark-l;
@@ -40,9 +46,16 @@
     @media only screen and (max-width: $bp-medium) {
       @include heading-3-mobile;
     }
+    @media only screen and (max-width: $bp-small) {
+      text-align: center;
+      margin-right: 0;
+    }
   }
   &__paragraph {
     color: $color-dark-xl;
     margin-top: 2.4rem;
+    @media only screen and (max-width: $bp-small) {
+      text-align: justify;
+    }
   }
 }

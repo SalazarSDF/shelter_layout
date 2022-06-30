@@ -40,6 +40,10 @@
       justify-content: center;
       align-items: center;
     }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 88vw;
+    }
   }
   &__heading {
     color: $color-dark-l;
@@ -49,6 +53,10 @@
   }
   &__subtitle {
     color: $color-dark-l;
+    @media only screen and (max-width: $bp-small) {
+      line-height: 160%;
+      letter-spacing: 0;
+    }
   }
   &__button {
     justify-content: space-evenly;
@@ -70,6 +78,10 @@
     font-size: 1.2rem;
     line-height: 1.8rem;
     color: $color-dark-m;
+
+    @media only screen and (max-width: $bp-small) {
+      text-align: justify;
+    }
   }
 
   &__img {
@@ -79,6 +91,9 @@
     }
     @media only screen and (max-width: $bp-medium) {
       width: 100%;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      width: 83%;
     }
   }
 }

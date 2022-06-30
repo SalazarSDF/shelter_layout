@@ -16,6 +16,13 @@
     justify-content: center;
     gap: 6rem;
   }
+  @media only screen and (max-width: $bp-medium) {
+    display: grid;
+  }
+  @media only screen and (max-width: $bp-small) {
+    gap: 4rem;
+    padding: 3rem 1rem 0 1rem;
+  }
 
   &__content {
     display: flex;
@@ -26,8 +33,10 @@
     @media only screen and(max-width: $bp-large) {
       margin-top: 0;
     }
-    @media only screen and (max-width: $bp-medium) {
-      align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+      height: auto;
+      gap: 4rem;
     }
   }
   &__heading {
@@ -35,11 +44,24 @@
     @media only screen and (max-width: $bp-medium) {
       @include heading-3-mobile;
     }
+    @media only screen and (max-width: $bp-small) {
+      text-align: center;
+      margin-right: 0.6rem;
+    }
+    > br {
+      @media only screen and (max-width: $bp-small) {
+        display: none;
+      }
+    }
   }
   &__mail {
     display: flex;
     align-items: center;
     column-gap: 2rem;
+    @media only screen and (max-width: $bp-small) {
+      justify-content: center;
+    }
+
     & > svg {
       width: 4rem;
       height: 3.2rem;
@@ -54,6 +76,9 @@
     display: flex;
     align-items: center;
     column-gap: 2rem;
+    @media only screen and (max-width: $bp-small) {
+      justify-content: center;
+    }
     & > svg {
       width: 4rem;
       height: 3.2rem;
@@ -64,9 +89,10 @@
     align-items: center;
     column-gap: 2rem;
 
-    & ~ h4 {
-      color: blue;
+    @media only screen and (max-width: $bp-small) {
+      justify-content: center;
     }
+
     & > svg {
       width: 2.2rem;
       height: 3.2rem;

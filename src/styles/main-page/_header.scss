@@ -13,6 +13,9 @@
       padding: 0 3rem;
     }
 
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 1rem;
+    }
     &__burger-icon {
       position: relative;
       display: inline-block;
@@ -28,6 +31,9 @@
         @media only screen and (max-width: $bp-medium) {
           display: flex;
           align-items: center;
+        }
+        @media only screen and (max-width: $bp-small) {
+          margin-right: 4.3rem;
         }
       }
 

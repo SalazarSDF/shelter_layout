@@ -26,5 +26,8 @@
       @include heading-3-mobile;
       margin-bottom: 4.2rem;
     }
+    @media only screen and (max-width: $bp-small) {
+      margin-top: 6.5rem;
+    }
   }
 }
