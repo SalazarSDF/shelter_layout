@@ -5,7 +5,7 @@
   left: 0;
 
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   visibility: hidden;
   opacity: 0;
   transition: all 0.5s;
@@ -23,7 +23,7 @@
   &__contant {
     background-color: $color-dark-3xl;
     width: 32rem;
-    height: 100vh;
+    height: 200vh;
     padding: 3rem 1rem 0 1rem;
   }
 }
